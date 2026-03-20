@@ -27,6 +27,7 @@ The BIIN Lookup API returns comprehensive card issuer information upon successfu
   "status_message": "SUCCESS",
   "mobicard_card_biin": "5173350006475601",
   "mobicard_txn_reference": "287972875",
+  "mobicard_token_id": "325026456",
   "timestamp": "2026-01-27 14:21:52",
   "card_biin_information": {
     "card_biin_flag": 1,
@@ -115,6 +116,7 @@ The value for the "status" response parameter is always either "SUCCESS" or "FAI
 | `status_message` | **Yes** | Status description | `"SUCCESS"` |
 | `mobicard_card_biin` | **Yes** | Original BIN/BIIN/card number from request | `"5173350006475601"` |
 | `mobicard_txn_reference` | **Yes** | Your original transaction reference | `"287972875"` |
+| `mobicard_token_id` | **Yes** | Your unique API request id | `"325026456"` |
 | `timestamp` | **Yes** | Response timestamp | `"2026-01-27 14:21:52"` |
 | `card_biin_information.card_biin_flag` | **Yes** | `1` if BIN found, `0` if not found | `1` |
 | `card_biin_information.card_biin_number` | **Yes** | 8-digit BIIN used for lookup | `"51733500"` |
